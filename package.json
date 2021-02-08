@@ -1,0 +1,16 @@
+{
+  "name": "esbuild-repro-esm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coveo/headless": "0.1.0",
+    "@codemirror/basic-setup": "0.17.1",
+    "esbuild": "^0.8.43"
+  }
+}
