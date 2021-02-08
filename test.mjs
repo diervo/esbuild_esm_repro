@@ -27,7 +27,16 @@ import { default as esbuild } from 'esbuild';
         // It yields the same outcome as the previous
         entryPoints: ['node_modules/@coveo/headless/dist/headless.esm.js'],
         format:'esm',
-        bundle: true,
+        bundle: false,
         outfile: 'incorrect_esm_coveo_headless_npm.mjs',
+    });
+
+    // Bundling the esm target (yet to be bundled)
+    await esbuild.build({
+        // It yields the same outcome as the previous
+        entryPoints: ['trivial_esm.js'],
+        format:'esm',
+        bundle: false,
+        outfile: 'incorrect_trivial_esm.mjs',
     });
 }())
